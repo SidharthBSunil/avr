@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../avr programing"
+		},
+		{
+			"name": "entri",
+			"path": "../entri"
+		},
+		{
+			"name": "second_led",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
