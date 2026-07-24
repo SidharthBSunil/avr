@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../C entri"
+		},
+		{
+			"name": "AVR_toggle_gpio_led",
+			"path": "../../AVR_toggle_gpio_led"
+		},
+		{
+			"name": "02_gpio_two_button",
+			"path": "../../02_gpio_two_button"
+		},
+		{
+			"name": "Two_button_one_led",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
