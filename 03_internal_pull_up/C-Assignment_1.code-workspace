@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "../../../C-Assignment_1"
+		},
+		{
+			"name": "02_gpio_pull_down",
+			"path": "../02_gpio_pull_down"
+		},
+		{
+			"name": "02_gpio_pull_up",
+			"path": "../02_gpio_pull_up"
+		},
+		{
+			"name": "01_led_blink",
+			"path": "../01_led_blink"
+		},
+		{
+			"name": "03_internal_pull_up",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
