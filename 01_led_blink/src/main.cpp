@@ -4,12 +4,12 @@
 int main()
 {
 
-  DDRB|=(1<<DDB3);
+  DDRB|=(1<<DDB5);
   while(1)
   {
-    PORTB|=(1<<PORTB3);
-    _delay_ms(1000);
-    PORTB&=~(1<<PORTB3);
-    _delay_ms(1000);
+    PORTB|=(1<<PORTB5);
+    _delay_ms(3000);
+    PORTB&=~(1<<PORTB5);
+    _delay_ms(3000);
   }
 }

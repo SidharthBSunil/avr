@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../../avr programing"
+		},
+		{
+			"name": "04_timer",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
