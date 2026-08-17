@@ -31,7 +31,7 @@ void motor_backward()
 }
 int main()
 {
-  uint8_t prev_button = 0;
+
   pwm();
   dc_motor_and_button();
   OCR0A=125;
@@ -41,8 +41,8 @@ int main()
   
   while(1)
   {
-      uint8_t button=!(PIND&(1<<PIND5));
-      if(!prev_button && button )
+      
+      if(!(PIND&(1<<PIND5)))
       {
         motor_forward();
       }
@@ -50,7 +50,7 @@ int main()
       {
         motor_backward();
       }
-      prev_button=button;
+      
 
     
     
