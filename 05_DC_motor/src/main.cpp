@@ -9,7 +9,7 @@ TCCR0A&=~(1<<COM0A0);
 TCCR0A|=(1<<COM0A1); 
 //pwm phase correct
 TCCR0A|=(1<<WGM00); 
-//prescaling 8
+//prescaling 
 TCCR0B|=(1<<CS01);
 }
 void dc_motor_and_button()
