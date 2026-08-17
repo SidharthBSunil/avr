@@ -33,7 +33,7 @@ int main()
   pwm();
   motor_forward();
   
-  int count=1;
+  int count=2;
   
  //ocr=(percentage*256)/100
   
