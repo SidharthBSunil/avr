@@ -1,29 +1,11 @@
-#define F_CPU 16000000UL
-#include<avr/io.h>
-#include<util/delay.h>
+#include <avr/io.h>
 
-void dc_motor()
+int main(void)
 {
-DDRB|=((1<<DDB1)|(1<<DDB2));
-}
+    DDRD |= (1 << PD7);      // D7 output
+    PORTD |= (1 << PD7);     // D7 HIGH
 
-void motor_forward()
-{
-  PORTB|=(1<<PORTB1);
-  PORTB&=~(1<<PORTB2);
-}
-int main()
-{
-dc_motor();
-while(1)
-{
-
-  //moto
-  
-  motor_forward();
-
-}
-
-
-
+    while (1)
+    {
+    }
 }
