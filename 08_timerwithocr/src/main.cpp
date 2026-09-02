@@ -5,7 +5,7 @@ volatile uint16_t count = 0;
 ISR(TIMER0_OVF_vect)
 {
   count++;
-  if(count>=997)
+  if(count>=1953)
   {
     PORTB^=(1<<PORTB2);
     count=0;

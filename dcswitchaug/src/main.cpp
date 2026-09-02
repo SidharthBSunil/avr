@@ -3,14 +3,33 @@
 void pwm()
 {
   
-DDRD |= (1 << DDD6);
-//non-inverting mode
-TCCR0A&=~(1<<COM0A0);
-TCCR0A|=(1<<COM0A1); 
-//pwm phase correct
-TCCR0A|=(1<<WGM00); 
-//prescaling 8
-TCCR0B|=(1<<CS01);
+ DDRD |= (1 << DDD6);
+
+    // Step 2: Configure Timer0 in Phase Correct PWM Mode
+    TCCR0A |= (1 << WGM00);
+    TCCR0A &= ~(1 << WGM01);
+
+    // Step 3: Choose Non-Inverting Mode
+    TCCR0A |= (1 << COM0A1);
+    TCCR0A &= ~(1 << COM0A0);
+
+    // Step 4: Choose Prescaler value
+    /*
+    ------------------------- CALCULATION -------------------------
+
+    Clock frequency = 16,000,000 Hz
+
+    fpwm = fclk / (N × 2 × 255)
+
+         = 16,000,000 / (8 × 2 × 255)
+
+         = 3,921 Hz ≈ 3.921 kHz
+
+    */
+
+    // Prescaler = 8
+    TCCR0B |= (1 << CS01);
+    TCCR0B &= ~((1 << CS00) | (1 << CS02));
 }
 void dc_motor_and_button()
 {
