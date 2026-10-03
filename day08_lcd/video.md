@@ -1,5 +1,4 @@
-## LCD Project Demo
 
-[![LCD Project Demo](images/lcd-thumbnail.png)](videos/VID20261003175451.mp4)
+# LCD Project Demo
 
-*Click the image to view the demo video.*
+https://github.com/SidharthBSunil/avr/blob/main/day08_lcd/VID20261003175451%20(2).mp4
